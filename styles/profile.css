@@ -1,0 +1,25 @@
+.top-part{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100%;
+    position:relative;   
+    color:black;
+    background-image: url('../assets/banner.jpg');
+    background-size: cover;
+}
+
+
+.profile-div{
+    border-radius: 100px;
+    width:250px;
+    height:250px;
+    margin-bottom:50px;   
+}
+
+.profile-picture{
+    border-radius: 100px;
+    mix-blend-mode: multiply;
+}

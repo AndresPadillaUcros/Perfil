@@ -1,0 +1,29 @@
+.contact-icons{
+    font-size: 70px;
+    color: lightskyblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-icons:hover{
+    color:#2b2bd8b2
+}
+
+
+
+
+.contact-category{
+    display: flex;
+    column-gap:50px;
+    justify-content: center;
+}
+
+
+
+.contact-link{
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

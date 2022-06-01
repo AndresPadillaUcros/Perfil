@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-const ImageComponent = ({label,src,alt,width,height,style}) => {
+const ImageComponent = ({label,src,alt,width,height,style,className}) => {
   return (
     <label>
         <span className='d-flex flex-column align-items-center picture-label '>{label}</span>
@@ -13,7 +13,7 @@ const ImageComponent = ({label,src,alt,width,height,style}) => {
             width={width}
             height={height}
             style={style}
-            className='imagenes'
+            className={className}
         />
             
 

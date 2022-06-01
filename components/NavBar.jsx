@@ -37,24 +37,25 @@ const NavBar = () => {
     <>
       <header className='header'>
         <nav className='my-navbar'>
-          <a href="" className='logo navbar-link'>Andres Padilla</a>
+          <span  className='logo navbar-link'>Andres Padilla</span>
           <button className="nav-toggle">
             <i className='fas fa-bars' />
           </button>
 
           <ul className='navbar-menu'>
             <li className='navbar-menu-item'>
-              <a href="#aspirations" className='navbar-menu-link navbar-link'>Aspirations</a>
+              <a href="#about" data-offset="100" className='navbar-menu-link navbar-link'>About</a>
             </li>
             <li className='navbar-menu-item'>
               <a href="#skillset" className='navbar-menu-link navbar-link'>Skills</a>
             </li>
             <li className='navbar-menu-item'>
-              <a href="#proyectos" className='navbar-menu-link navbar-link'>Proyectos</a>
+              <a href="#proyectos" data-offset="200" className='navbar-menu-link navbar-link'>Projects</a>
             </li>
             <li className='navbar-menu-item'>
-              <a href="" className='navbar-menu-link navbar-link'>HV</a>
+              <a href="#contact" className='navbar-menu-link navbar-link'>Contact</a>
             </li>
+
           </ul>
 
         </nav>
