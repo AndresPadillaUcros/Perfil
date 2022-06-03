@@ -3,18 +3,20 @@ import React from 'react'
 
 
 
-const ImageComponent = ({label,src,alt,width,height,style,className}) => {
+const ImageComponent = ({label,src,alt,width,height,style,className,divClassName}) => {
   return (
-    <label>
-        <span className='d-flex flex-column align-items-center picture-label '>{label}</span>
-        <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            style={style}
-            className={className}
-        />
+    <label className='d-flex flex-column align-items-center'>
+        <span className='picture-label '>{label}</span>
+        <div className={divClassName}>
+          <Image
+              src={src}
+              alt={alt}
+              width={width}
+              height={height}
+              style={style}
+              className={className}
+          />
+        </div>
             
 
     </label>

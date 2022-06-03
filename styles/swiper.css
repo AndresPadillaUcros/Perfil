@@ -63,3 +63,18 @@
 .button-swiper:hover{
   color:#2b2bd8b2
 }
+
+@media (max-width: 991px) {
+  .swiper {
+    height: 300px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    height: 400px;
+  }
+    
+    
+}

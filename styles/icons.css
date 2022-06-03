@@ -9,15 +9,11 @@
     color:#2b2bd8b2
 }
 
-
-
-
 .contact-category{
     display: flex;
     column-gap:50px;
     justify-content: center;
 }
-
 
 
 .contact-link{

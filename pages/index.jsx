@@ -100,18 +100,18 @@ const SwiperPart=()=>{
 
 const About =()=>{
   return(
-    <div className='section d-flex flex-row justify-content-around '>
+    <div className='section about-container '>
         <span id='about' className='anchor'></span>
 
-        <div className='d-flex flex-column w-50'>
+        <div className='about'>
           <span className='titulo'> About </span>
-          <div className='aspirations '>
-            <div className=''>
+          <div className='about-hv '>
+            <p>
               I am a mechanical engineer by profession since 2017. Passionate in the TIC sector since I started my master's degree in mechanical 
               engineering in 2020 on topics related to renewable energy and data analysis. I would like to apply in a role related to Data scientist 
               or Web developer. I am self-taught in this sector, participating in different kaggle competitions for the data science area and building 
               different personal projects for the web development area.           
-            </div>
+            </p>
 
             <a target="_blank" href='/Hv.pdf' className='text-center mt-2' >
               <button className='button-cv '>  See CV </button>
@@ -120,7 +120,7 @@ const About =()=>{
           </div>
         </div>
 
-        <div className='d-flex flex-column w-50 mt-5 '>
+        <div className='about mt-5 '>
           <span className='titulo mb-4'> Main courses </span>
           <SwiperPart />
         </div>
@@ -133,10 +133,9 @@ const About =()=>{
 
 const Skills =()=>{
 
-  const width =100
-  const height=100
+
   return(
-    <div className='section'>
+    <div className='section skills-margin'>
       <span id='skillset' className='anchor'></span>
       <span className='titulo'> Skillset</span>
       <div className='skillset'>
@@ -144,108 +143,96 @@ const Skills =()=>{
           label='JavaScript'
           src={js}
           alt="JavaScript" 
-          width={width}
-          height={height}
           style={{borderRadius:"40px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
        />
         <ImageComponent 
           label='Html'
           src={html}
           alt="Html" 
-          width={width}
-          height={height}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='Css'
           src={css}
           alt="Css" 
-          width={width}
-          height={height}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='Node.js'
           src={node}
           alt="Node.js" 
-          width={width}
-          height={height}
           style={{borderRadius:"15px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='React.js'
           src={react}
           alt="React.js" 
-          width={width}
-          height={height}
           style={{borderRadius:"15px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='Next.js'
           src={next}
           alt="Next.js" 
-          width={width}
-          height={height}
           style={{borderRadius:"15px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='MongoDB'
           src={mongo}
           alt="MongoDB" 
-          width={width}
-          height={height}
           style={{borderRadius:"15px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='SQL'
           src={sql}
           alt="SQL" 
-          width={width}
-          height={height}
           style={{borderRadius:"15px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
           label='Python'
           src={python}
           alt="Python" 
-          width={width}
-          height={height}
           style={{borderRadius:"40px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
           
         />
         <ImageComponent 
           label='Dash'
           src={dash}
           alt="Dash"
-          width={width}
-          height={height}
           style={{borderRadius:"15px", }}
-          className={'imagenes'}
+          className={'img-skillset'}
+          divClassName={'img-skillset-container'}
         />
         <ImageComponent 
             label='TensorFlow'
             src={tensor}
             alt="TensorFlow" 
-            width={width}
-            height={height}
             style={{borderRadius:"15px", }}
-            className={'imagenes'}
+            className={'img-skillset'}
+            divClassName={'img-skillset-container'}
         />
         <ImageComponent 
             label='SkLearn'
             src={skit}
             alt="SkLearn" 
-            width={width}
-            height={height}
             style={{borderRadius:"15px", }}
-            className={'imagenes'}
+            className={'img-skillset'}
+            divClassName={'img-skillset-container'}
         />
 
       </div>
@@ -255,25 +242,37 @@ const Skills =()=>{
 
 const Proyectos =()=>{
 
-  const width =350
-  const height=350
-  
+    if (typeof window !== "undefined") {
+      $(document).ready(function(){
+        if(window.innerWidth < 767){
+          $('.portfolio__item').addClass('project-resize').removeClass('portfolio__item');
+        }
+      });
+      $(window).resize(function(){
+        if(window.innerWidth < 767){
+          $('.portfolio__item').addClass('project-resize').removeClass('portfolio__item');
+        }else{
+          $('.project-resize').addClass('portfolio__item').removeClass('project-resize');
+        }
+      });
+
+    }
+
   return(
     <div className='section'>
       <span id='proyectos' className='anchor'></span>
       <span className='titulo mb-4'  > Projects </span>   
 
-      <div className='d-flex flex-row align-items-center justify-content-around flex-wrap'>
+      <div className=' projects-content'>
         
           <div className="portfolio__item">
             <ImageComponent
                 label=''
                 src={gestor}
                 alt="Biblioteca de codigos" 
-                width={width}
-                height={height}
                 style={{borderRadius:"40px", }}
-                className={''}
+                divClassName={'img-project-container'}
+                
             />
             <div className="portfolio__description">
               <h3 className="portfolio__description--title">University project manager</h3>
@@ -307,10 +306,8 @@ const Proyectos =()=>{
                 label=''
                 src={biblioteca}
                 alt="Biblioteca de codigos" 
-                width={width}
-                height={height}
                 style={{borderRadius:"40px", }}
-                className={''}
+                divClassName={'img-project-container'}
             />
             <div className="portfolio__description">
               <h3 className="portfolio__description--title">Code library</h3>
@@ -344,10 +341,8 @@ const Proyectos =()=>{
                 label=''
                 src={paneles}
                 alt="Paneles solares" 
-                width={width}
-                height={height}
                 style={{borderRadius:"40px", }}
-                className={''}
+                divClassName={'img-project-container'}
             />
             <div className="portfolio__description">
               <h3 className="portfolio__description--title">Photovoltaic energy forecast in Colombia</h3>
@@ -409,16 +404,11 @@ const Contact =()=>{
 
 const Home = () => {
   return (
-    <div className='background-image'>
-     
+    <div className='background-image'> 
       <About />
       <Skills />
       <Proyectos />
       <Contact />
-      
-
-
-
     </div>
   )
 }
