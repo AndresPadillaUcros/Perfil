@@ -1,4 +1,4 @@
-
+import { useEffect } from "react";
 
 
 const NavBar = () => {
@@ -17,8 +17,10 @@ const NavBar = () => {
         $('.header').removeClass('fixed')
   
       }
-  
+    
     })
+
+ 
 
 
     const navToggle = document.querySelector(".nav-toggle")
@@ -30,7 +32,8 @@ const NavBar = () => {
       
     })
   }
-  
+
+
 
 
   return (
