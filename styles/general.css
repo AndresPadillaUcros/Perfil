@@ -171,7 +171,7 @@ html,body{
         column-gap: 40px;
         row-gap: 50px;
         flex-wrap:wrap;
-        justify-content: center;
+        justify-content:space-around;
         align-items:center;
     }  
 
@@ -188,7 +188,9 @@ html,body{
     .skills-margin{
         margin-top: 40px;
     }
-
+    .device-screen{
+        width:25%
+    }
 }
 
 
