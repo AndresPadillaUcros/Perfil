@@ -68,13 +68,24 @@
   .swiper {
     height: 300px;
   }
+
   
 }
 
 @media (max-width: 767px) {
   .swiper {
     height: 400px;
+  }  
+}  
+
+
+
+@media (max-width: 576px) {
+  .swiper {
+    height: 400px;
+  }  
+
+  .swiper-slide {
+    font-size: 10px;
   }
-    
-    
-}
+}  

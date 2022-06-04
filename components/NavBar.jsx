@@ -27,7 +27,7 @@ const NavBar = () => {
     
     navToggle.addEventListener("click", ()=>{
       navMenu.classList.toggle("nav-menu-visible")
-      console.log(navMenu)
+      
     })
   }
   

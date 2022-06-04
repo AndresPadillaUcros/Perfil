@@ -1,8 +1,11 @@
-html, body {
-    max-width: 100%;
+*{
     font-family: "Garamond", Serif; 
-    margin: 0px; 
+    margin: 0; 
+    box-sizing: border-box;
+
 }
+
+
 
 .background-image{
     background-image: url('../assets/background.jpg');
@@ -182,6 +185,19 @@ html, body {
     .skills-margin{
         margin-top: 40px;
     }
- 
+
+}
+
+
+@media (max-width: 400px) {
+
+    .titulo{
+        font-size: 20px;
+    }
+    .about-hv{
+        font-size:10px;
+        text-align: center;
+     }
+
 
 }
