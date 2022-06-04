@@ -11,7 +11,7 @@ const Header = () => {
                     className='profile-picture'
                 />
             </div>
-            <h1 className='mt-5 text-center'> Hi! <br/> I'm Andres Padilla </h1>
+            <h1 className='mt-5 text-center'> Hi! <br/> I &apos;m Andres Padilla </h1>
         </div>
     
   )

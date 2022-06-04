@@ -5,7 +5,7 @@ import React from 'react'
 
 const ImageComponent = ({label,src,alt,width,height,style,className,divClassName}) => {
   return (
-    <label className='d-flex flex-column align-items-center'>
+    <label className='d-flex flex-column align-items-center justify-content-center'>
         <span className='picture-label '>{label}</span>
         <div className={divClassName}>
           <Image

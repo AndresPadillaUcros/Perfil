@@ -6,7 +6,7 @@ import 'styles/navbar.css'
 import 'styles/icons.css'
 import 'styles/profile.css'
 import 'styles/swiper.css'
-import 'styles/portfolio.css'
+import 'styles/project.css'
 
 
 function MyApp({ Component, pageProps }: AppProps) {

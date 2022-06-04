@@ -90,10 +90,7 @@ html, body {
     font-size:25px;
 }
 
-.img-project-container{
-    width:350px;
-    height:350px;
-}
+
 
 
 @media (max-width: 991px) {
@@ -185,10 +182,6 @@ html, body {
     .skills-margin{
         margin-top: 40px;
     }
-
-
-
-
-    
+ 
 
 }

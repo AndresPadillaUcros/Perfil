@@ -41,7 +41,7 @@ const DS4 =()=>{
         up  were selected based on a test. It had a duration of 375 hours, with professors from USA and it was a great experience.
       </div>
 
-      <a target="_blank" href="https://www.credential.net/8c662167-5fab-4d86-9e84-74d590ddc9bc#gs.pql2f3" >
+      <a target="_blank" href="https://www.credential.net/8c662167-5fab-4d86-9e84-74d590ddc9bc#gs.pql2f3" rel="noreferrer" >
         <button className=' button-swiper'>  See credential </button>
       </a>
     </div>
@@ -107,7 +107,7 @@ const About =()=>{
           <span className='titulo'> About </span>
           <div className='about-hv '>
             <p>
-              I am a mechanical engineer by profession since 2017. Passionate in the TIC sector since I started my master's degree in mechanical 
+              I am a mechanical engineer by profession since 2017. Passionate in the TIC sector since I started my master &apos;s degree in mechanical 
               engineering in 2020 on topics related to renewable energy and data analysis. I would like to apply in a role related to Data scientist 
               or Web developer. I am self-taught in this sector, participating in different kaggle competitions for the data science area and building 
               different personal projects for the web development area.           
@@ -246,13 +246,16 @@ const Proyectos =()=>{
       $(document).ready(function(){
         if(window.innerWidth < 767){
           $('.portfolio__item').addClass('project-resize').removeClass('portfolio__item');
+          $('.portfolio__description').addClass('project-descripction').removeClass('portfolio__description');
         }
       });
       $(window).resize(function(){
         if(window.innerWidth < 767){
           $('.portfolio__item').addClass('project-resize').removeClass('portfolio__item');
+          $('.portfolio__description').addClass('project-descripction').removeClass('portfolio__description');
         }else{
           $('.project-resize').addClass('portfolio__item').removeClass('project-resize');
+          $('.project-descripction').addClass('portfolio__description').removeClass('project-descripction');
         }
       });
 
@@ -271,6 +274,7 @@ const Proyectos =()=>{
                 src={gestor}
                 alt="Biblioteca de codigos" 
                 style={{borderRadius:"40px", }}
+                className='portfolio__img '
                 divClassName={'img-project-container'}
                 
             />
@@ -279,13 +283,14 @@ const Proyectos =()=>{
               <p className="portfolio__description--text">
                   Application to create projects where students can register.
                   <br /><br />
-                  Built on Next.js and it uses a PostgreSQL database, queried by GrahpQL + ORL Prisma.
+                  Built on Next.js and it uses a PostgreSQL database, queried by GraphQL + ORL Prisma.
               </p>
               <div className="buttons__container">
                 <a
                   className="button"
                   href={"https://avocado-store-jgestradam-nd4yxxllv-jgestradam.vercel.app/"}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fas fa-globe-americas"></i> Website
                 </a>
@@ -293,6 +298,7 @@ const Proyectos =()=>{
                   className="button"
                   href="https://github.com/jgestradam/Avo-store"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fab fa-github"></i> Repository
                 </a>
@@ -307,12 +313,13 @@ const Proyectos =()=>{
                 src={biblioteca}
                 alt="Biblioteca de codigos" 
                 style={{borderRadius:"40px", }}
+                className='portfolio__img '
                 divClassName={'img-project-container'}
             />
             <div className="portfolio__description">
               <h3 className="portfolio__description--title">Code library</h3>
               <p className="portfolio__description--text">
-                  It's an online storage of the commands I use frequently in python and on github.
+                  It is an online storage of the commands I use frequently in python and github.
                   <br /><br />
                   Built in React and it uses a MongoDB database, queried by GraphQL.
               </p>
@@ -321,6 +328,7 @@ const Proyectos =()=>{
                   className="button"
                   href={"https://avocado-store-jgestradam-nd4yxxllv-jgestradam.vercel.app/"}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fas fa-globe-americas"></i> Website
                 </a>
@@ -328,6 +336,7 @@ const Proyectos =()=>{
                   className="button"
                   href="https://github.com/jgestradam/Avo-store"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fab fa-github"></i> Repository
                 </a>
@@ -342,12 +351,13 @@ const Proyectos =()=>{
                 src={paneles}
                 alt="Paneles solares" 
                 style={{borderRadius:"40px", }}
+                className='portfolio__img '
                 divClassName={'img-project-container'}
             />
             <div className="portfolio__description">
               <h3 className="portfolio__description--title">Photovoltaic energy forecast in Colombia</h3>
               <p className="portfolio__description--text">
-                  Dashboard that allows predicting the power that will be produced in a solar panel in different regions of Colombia.
+                  Dashboard that allows predicting the power that will be produced by a solar panel in different regions of Colombia.
                   <br /><br />
                   Build in Dash and it contains data analysis and predictive models.
               </p>
@@ -356,6 +366,7 @@ const Proyectos =()=>{
                   className="button"
                   href={"https://avocado-store-jgestradam-nd4yxxllv-jgestradam.vercel.app/"}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fas fa-globe-americas"></i> Website
                 </a>
@@ -363,6 +374,7 @@ const Proyectos =()=>{
                   className="button"
                   href="https://github.com/jgestradam/Avo-store"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fab fa-github"></i> Repository
                 </a>
@@ -384,12 +396,12 @@ const Contact =()=>{
     <div id='contact' className='section'>
         <span className='titulo mt-4'> Contact </span>   
         <div className='contact-category'>
-            <a target="_blank" href="https://github.com/AndresPadillaUcros/Perfil" className='contact-link'>
+            <a target="_blank" href="https://github.com/AndresPadillaUcros/Perfil"  rel="noreferrer" className='contact-link'>
                 <i className="fab fa-github contact-icons"></i>
                 <p> Follow Me</p>             
             </a>
 
-          <a target="_blank" href="https://www.linkedin.com/in/andres-mauricio-padilla-ucros/"  className='contact-link'>
+          <a target="_blank" href="https://www.linkedin.com/in/andres-mauricio-padilla-ucros/"  rel="noreferrer" className='contact-link'>
               <i className="fab fa-linkedin-in contact-icons"></i>
               <p> Contact Me</p>
           </a>
