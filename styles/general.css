@@ -1,15 +1,14 @@
+
 html,body{
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
     font-family: "Garamond", Serif; 
-    overflow-x: hidden;
+    
+
  
 }
 
-div {
-    box-sizing: border-box;
-    }
 
 .background-image{
     background-image: url('../assets/background.jpg');
