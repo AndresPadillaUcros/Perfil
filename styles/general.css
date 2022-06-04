@@ -4,9 +4,6 @@ html,body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Garamond", Serif; 
-    
-
- 
 }
 
 
@@ -166,7 +163,10 @@ html,body{
     .about-hv{
         font-size:20px;
         text-align: center;
+        margin:20px 20px 30px 20px;
      }
+
+
     .skillset{
         column-gap: 40px;
         row-gap: 50px;

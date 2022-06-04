@@ -104,7 +104,7 @@ const About =()=>{
         <span id='about' className='anchor'></span>
 
         <div className='about'>
-          <span className='titulo'> About </span>
+          <span className='titulo'> About</span>
           <div className='about-hv '>
             <p>
               I am a mechanical engineer by profession since 2017. Passionate in the TIC sector since I started my master &apos;s degree in mechanical 
