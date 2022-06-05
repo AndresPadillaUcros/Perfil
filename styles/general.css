@@ -32,8 +32,17 @@ html,body{
 
 .about-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
     justify-content: space-around;
+    padding-top:50px;
+}
+
+
+/* El header tiene una height the 80px, por lo tanto toca agregar una clase que apenas se active el fix, se agregue un padding adicional de 80px
+para que el titulo se ponga abajo del navbar. Pero con puse un padding top de 50px, entonces debo sumar esto a los 80px para hacer 140px */
+
+.padding-nav{
+    padding-top:140px;
 }
 
 .about{

@@ -13,8 +13,11 @@ const NavBar = () => {
     $(window).scroll(function (){
       if($(this).scrollTop()>height){
         $('.header').addClass('fixed')
+        $('.about-container').addClass('padding-nav')
+
       }else{
         $('.header').removeClass('fixed')
+        $('.about-container').removeClass('padding-nav')
   
       }
     
@@ -25,13 +28,19 @@ const NavBar = () => {
 
     const navToggle = document.querySelector(".nav-toggle")
     const navMenu=document.querySelector(".navbar-menu")
-  
+    const navBarLink=document.querySelectorAll(".navbar-menu-link")            
     
     navToggle.addEventListener("click", ()=>{
       navMenu.classList.toggle("nav-menu-visible")
       
     })
-  }
+    navBarLink.forEach((u)=>{
+      u.addEventListener("click", ()=>{  navMenu.classList.toggle("nav-menu-visible") }
+    )
+  })
+}
+
+
 
 
 
