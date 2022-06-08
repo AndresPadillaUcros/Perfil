@@ -1,5 +1,7 @@
 import ImageComponent from 'components/Image'
 import Image from 'next/image'
+import Head from 'next/head'
+
 
 import python from 'assets/python.png'
 import js from 'assets/js.png'
@@ -417,6 +419,9 @@ const Contact =()=>{
 const Home = () => {
   return (
     <div className='background-image'> 
+      <Head>
+        <title> Andres Padilla</title>
+      </Head>
       <About />
       <Skills />
       <Proyectos />
