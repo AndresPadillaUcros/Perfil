@@ -288,7 +288,7 @@ const Proyectos =()=>{
               <div className="buttons__container">
                 <a
                   className="button"
-                  href={"https://avocado-store-jgestradam-nd4yxxllv-jgestradam.vercel.app/"}
+                  href={"https://gestor-proyectos.vercel.app/"}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -296,7 +296,7 @@ const Proyectos =()=>{
                 </a>
                 <a
                   className="button"
-                  href="https://github.com/jgestradam/Avo-store"
+                  href="https://github.com/AndresPadillaUcros/GestorProyectosNextJS"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -326,7 +326,7 @@ const Proyectos =()=>{
               <div className="buttons__container">
                 <a
                   className="button"
-                  href={"https://avocado-store-jgestradam-nd4yxxllv-jgestradam.vercel.app/"}
+                  href={"https://mis-codigos.vercel.app/"}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -334,7 +334,7 @@ const Proyectos =()=>{
                 </a>
                 <a
                   className="button"
-                  href="https://github.com/jgestradam/Avo-store"
+                  href="https://github.com/AndresPadillaUcros/CodigosFront"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -364,7 +364,7 @@ const Proyectos =()=>{
               <div className="buttons__container">
                 <a
                   className="button"
-                  href={"https://avocado-store-jgestradam-nd4yxxllv-jgestradam.vercel.app/"}
+                  href={"https://photovoltaic-forecasting.herokuapp.com/"}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -372,7 +372,7 @@ const Proyectos =()=>{
                 </a>
                 <a
                   className="button"
-                  href="https://github.com/jgestradam/Avo-store"
+                  href="https://github.com/AndresPadillaUcros/PhotovoltaicForecast"
                   target="_blank"
                   rel="noreferrer"
                 >
