@@ -35,7 +35,7 @@ import "swiper/css/effect-cards";
 const DS4 =()=>{
   return(
     <div className='d-flex flex-column'>
-      <span className='title-card'> Data science curse from Correlation One company</span>
+      <span className='title-card'> Data science course from Correlation One company</span>
       <div className='content-card'>
         This course was an oportunity offered by the government of Colombia, where only about the 10% of the people who signed 
         up  were selected based on a test. It had a duration of 375 hours, with professors from USA and it was a great experience.
@@ -51,7 +51,7 @@ const DS4 =()=>{
 const MisionTic =()=>{
   return(
     <div className='d-flex flex-column'>
-      <span className='title-card'>Web development curse</span>
+      <span className='title-card'>Web development course</span>
       <div className='content-card'>
         This course was led by the government of Colombia to meet the challenges of the Fourth Industrial Revolution. 
         It had a duration of 800 hours in the Universidad de Antioquia where I could learn the MERN stack and the Scrum development methodology.
