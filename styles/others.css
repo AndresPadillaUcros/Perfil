@@ -1,0 +1,31 @@
+.subtitle{
+    color: rgba(0, 0, 0, 0.616);
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap:20px;
+
+}
+
+.article-button{
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .articles{
+        row-gap: 30px;
+    }
+
+
+}
+

@@ -18,10 +18,15 @@ import mongo from 'assets/mongo.png'
 
 import paneles from 'assets/paneles.png'
 import gestor from 'assets/gestor.jpg'
-
 import biblioteca from 'assets/biblioteca.png'
 
-import ReactCard from 'components/Card'
+import metodologia from 'assets/metodologia.jpg'
+import tes from 'assets/tes.png'
+import farm from 'assets/farm.jpg'
+
+
+import ReactCard from 'components/ReactCard'
+import ReactCard2 from 'components/ReactCard2'
 
 import { Navigation, Pagination, Scrollbar, A11y,EffectCube,EffectCards } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -138,8 +143,8 @@ const Skills =()=>{
 
   return(
     <div className='section skills-margin'>
-      <span id='skillset' className='anchor'></span>
-      <span className='titulo'> Skillset</span>
+      <span id='skillset ' className='anchor'></span>
+      <span className='titulo mt-5 mb-3'> Skillset</span>
       <div className='skillset'>
         <ImageComponent   
           label='JavaScript'
@@ -266,7 +271,7 @@ const Proyectos =()=>{
   return(
     <div className='section'>
       <span id='proyectos' className='anchor'></span>
-      <span className='titulo mb-4'  > Projects </span>   
+      <span className='titulo mt-5 mb-4'  > Projects </span>   
 
       <div className=' projects-content'>
         
@@ -396,7 +401,7 @@ const DataScience =()=>{
 
   return(
     <div id='dataScience' className='section'>
-       <span className='titulo mt-4'> Machine Learning Competitions (Kaggle) </span>   
+       <span className='titulo mt-5 mb-4'> Machine Learning Competitions (Kaggle) </span>   
 
        <div className='cards'>
         <ReactCard 
@@ -427,10 +432,48 @@ const DataScience =()=>{
 }
 
 
+const Others = () =>{
+  return (
+    <div id='others' className='section'>
+
+      <span className='titulo mt-5 mb-4'> Others </span>  
+
+      <div > 
+        <span className='subtitle mt-1 mb-3'> Journal Articles </span>  
+
+        <div className='articles'>   
+          <ReactCard2 
+            image={metodologia}
+            text='Computational methdology made in Python to interpolate and verify the photovoltaic module perfomance to different outdoor conditions.'
+            link= 'https://linkinghub.elsevier.com/retrieve/pii/S0038092X22002304'
+          />
+
+          <ReactCard2 
+            image={tes}
+            text='Python algorithm to evaluate, optimize and select the capacity and cost of thermal energy storage tanks for cooling district purposes.'
+            link= 'https://www.distritoenergetico.com/pdf/MEMORIAS%20CONGRESO%20DISTRITOS%20TERMICOS%20(ajuste).pdf#page=73'
+          />
+
+          <ReactCard2 
+            image={farm}
+            text='Simulation of the energy produced by different types of photovoltaic technologies in all regions of Colombia. '
+            link= 'https://www.distritoenergetico.com/pdf/MEMORIAS%20CONGRESO%20DISTRITOS%20TERMICOS%20(ajuste).pdf#page=109'
+          />
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  )
+}
+
 const Contact =()=>{
   return(
     <div id='contact' className='section'>
-        <span className='titulo mt-4'> Contact </span>   
+        <span className='titulo mt-5'> Contact </span>   
         <div className='contact-category'>
             <a target="_blank" href="https://github.com/AndresPadillaUcros/Perfil"  rel="noreferrer" className='contact-link'>
                 <i className="fab fa-github contact-icons"></i>
@@ -460,6 +503,7 @@ const Home = () => {
       <Skills />
       <Proyectos />
       <DataScience />
+      <Others />
       <Contact />
       
     </div>

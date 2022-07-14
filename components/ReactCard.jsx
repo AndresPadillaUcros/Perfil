@@ -1,12 +1,17 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Image from 'next/image';
+import RenderIf from 'components/RenderIf'
 
+const ReactCard=({image,title, text, link})=> {
 
-const ReactCard=({title, text, link})=> {
   return (
     <Card className="body-card text-center" style={{ width: '18rem' }} >
-      
       <Card.Body>
+        
+        <RenderIf isTrue={(image)}>
+          <Image src={image} />
+        </RenderIf>
+        
         <Card.Title className='title-card'>{title}</Card.Title>
         <Card.Text className='text-card'>
             {text}

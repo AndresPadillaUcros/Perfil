@@ -69,6 +69,11 @@ const NavBar = () => {
             </li>
 
             <li className='navbar-menu-item'>
+              <a href="#others" data-offset="200" className='navbar-menu-link navbar-link'>Others</a>
+            </li>
+
+
+            <li className='navbar-menu-item'>
               <a href="#contact" className='navbar-menu-link navbar-link'>Contact</a>
             </li>
 
