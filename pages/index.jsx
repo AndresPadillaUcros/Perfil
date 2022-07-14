@@ -21,7 +21,7 @@ import gestor from 'assets/gestor.jpg'
 
 import biblioteca from 'assets/biblioteca.png'
 
-
+import ReactCard from 'components/Card'
 
 import { Navigation, Pagination, Scrollbar, A11y,EffectCube,EffectCards } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -392,6 +392,40 @@ const Proyectos =()=>{
 
 }
 
+const DataScience =()=>{
+
+  return(
+    <div id='dataScience' className='section'>
+       <span className='titulo mt-4'> Machine Learning Competitions (Kaggle) </span>   
+
+       <div className='cards'>
+        <ReactCard 
+          title='Stores Sales Forecasting'
+          text='Random forest regressor to predict the sales for different stores.'
+          link= 'https://www.kaggle.com/code/andrespadillaucros/2-store-sales-random-forest-forecast'
+        />
+        <ReactCard 
+          title='Predicting Future Sales'
+          text='LGBM regressor to forecast the next monthly sales using lags for the time series'
+          link= 'https://www.kaggle.com/code/andrespadillaucros/3-predict-future-sales'
+        />
+        <ReactCard 
+          title='Houses Sales Forecasting'
+          text='LGBM regressor to forecast the sale price of different houses'
+          link='https://www.kaggle.com/code/andrespadillaucros/4-houses-sales-forecast'
+        />
+        <ReactCard 
+          title='Energy Forecasting'
+          text='XGB regressor to forecast the energy read by meter in different buildings'
+          link='https://www.kaggle.com/code/andrespadillaucros/5-energy-forecasting'
+        />
+       </div>
+  
+
+    </div>
+  )
+}
+
 
 const Contact =()=>{
   return(
@@ -425,7 +459,9 @@ const Home = () => {
       <About />
       <Skills />
       <Proyectos />
+      <DataScience />
       <Contact />
+      
     </div>
   )
 }

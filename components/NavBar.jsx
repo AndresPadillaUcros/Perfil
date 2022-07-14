@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 
 
 const NavBar = () => {
@@ -64,6 +63,11 @@ const NavBar = () => {
             <li className='navbar-menu-item'>
               <a href="#proyectos" data-offset="200" className='navbar-menu-link navbar-link'>Projects</a>
             </li>
+
+            <li className='navbar-menu-item'>
+              <a href="#dataScience" data-offset="200" className='navbar-menu-link navbar-link'>Competitions</a>
+            </li>
+
             <li className='navbar-menu-item'>
               <a href="#contact" className='navbar-menu-link navbar-link'>Contact</a>
             </li>

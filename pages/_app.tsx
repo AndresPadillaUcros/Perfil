@@ -7,7 +7,7 @@ import 'styles/icons.css'
 import 'styles/profile.css'
 import 'styles/swiper.css'
 import 'styles/project.css'
-
+import 'styles/cards.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
 

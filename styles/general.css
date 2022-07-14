@@ -28,6 +28,7 @@ html,body{
     font-size: 45px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .about-container{
