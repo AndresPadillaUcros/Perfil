@@ -143,7 +143,7 @@ const Skills =()=>{
 
   return(
     <div className='section skills-margin'>
-      <span id='skillset ' className='anchor'></span>
+      <span id='skillset' className='anchor'></span>
       <span className='titulo mt-5 mb-3'> Skillset</span>
       <div className='skillset'>
         <ImageComponent   
@@ -444,7 +444,7 @@ const Others = () =>{
         <div className='articles'>   
           <ReactCard2 
             image={metodologia}
-            text='Computational methdology made in Python to interpolate and verify the photovoltaic module perfomance to different outdoor conditions.'
+            text='Computational methodology made in Python to interpolate and verify the photovoltaic module perfomance to different outdoor conditions.'
             link= 'https://linkinghub.elsevier.com/retrieve/pii/S0038092X22002304'
           />
 
